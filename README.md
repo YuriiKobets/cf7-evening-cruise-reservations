@@ -95,9 +95,6 @@ Each reservation is stored and displayed independently, including multiple reser
 4. Configure the related Contact Form 7 reservation form.
 5. Add the form to the required WordPress page.
 
-## Screenshots
-
-Screenshots of the reservation form, calendar and administration panel will be added to this repository.
 
 ## Project Purpose
 
