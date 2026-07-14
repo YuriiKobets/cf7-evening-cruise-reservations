@@ -1,0 +1,333 @@
+.cf7-ecr-wrap,
+.cf7-ecr-booking {
+	display: block;
+}
+
+.cf7-ecr-date {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.cf7-ecr-date .cf7-ecr-date-selected {
+	font-weight: 600;
+}
+
+.cf7-ecr-date-selected {
+	display: block;
+	margin: 0 0 10px;
+}
+
+.cf7-ecr-calendar-loading {
+	padding: 18px;
+	text-align: center;
+}
+
+.data-head {
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.cf7-ecr-calendar-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 14px;
+}
+
+.cf7-ecr-calendar-header strong {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.cf7-ecr-prev,
+.cf7-ecr-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border: 1px solid #5bc5ec;
+	border-radius: 50%;
+	background: #fff;
+	font-size: 24px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.cf7-ecr-prev:hover,
+.cf7-ecr-next:hover {
+	background: #f5f5f5;
+}
+
+.cf7-ecr-calendar-table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 0;
+}
+
+.cf7-ecr-calendar-table th,
+.cf7-ecr-calendar-table td {
+	padding: 2px;
+	text-align: center;
+	border: 0;
+}
+
+.cf7-ecr-calendar-table th {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.cf7-ecr-day {
+	height: 53px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+	width: 100%;
+	min-height: 48px;
+	padding: 6px 3px;
+	border: 1px solid #5bc5ec;
+	border-radius: 8px;
+	background: #fff;
+	cursor: pointer;
+	transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.cf7-ecr-day:not(:disabled):hover,
+.cf7-ecr-day:not(:disabled):focus {
+	border-color: #5bc5ec;
+	background: #9cdbf1;
+	outline: none;
+}
+
+.cf7-ecr-day.is-selected {
+	font-weight: 600;
+	border-color: #5bc5ec !important;
+	background: #5bc5ec !important;
+}
+
+.cf7-ecr-day.is-disabled,
+.cf7-ecr-day:disabled {
+	background: #f3f3f3;
+	color: #999;
+	border-color: #e1e1e1;
+	opacity: 1;
+	cursor: not-allowed;
+}
+
+.cf7-ecr-day-number {
+	font-size: 14px;
+	line-height: 1;
+}
+
+.cf7-ecr-day-meta {
+	min-height: 12px;
+	font-size: 9px;
+	line-height: 1.1;
+}
+
+.cf7-ecr-booking {
+	display: grid;
+	gap: 10px;
+	max-width: 360px;
+}
+
+.cf7-ecr-exclusive-label,
+.cf7-ecr-people-label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-direction: row !important;
+}
+
+.big-text {
+	font-size: 1em !important;
+	font-weight: 400 !important;
+}
+
+.big-text strong {
+	font-weight: 600 !important;
+}
+
+.cf7-ecr-people-label {
+	justify-content: space-between;
+}
+
+
+
+.cf7-ecr-booking.is-exclusive .cf7-ecr-people-label {
+	opacity: 0.55;
+}
+
+.cf7-ecr-booking-note {
+	font-size: 0.92em;
+}
+
+#cf7-ecr-date-1 {
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	height: 413px;
+	margin-bottom: 10px;
+}
+
+.cf7-ecr-exclusive-label [type=checkbox],
+.wpcf7-list-item [type=checkbox] {
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.no-margin {
+	margin-bottom: 2px;
+	font-weight: 600;
+}
+
+.cf7-ecr-booking.is-exclusive-blocked .cf7-ecr-exclusive-label,
+.cf7-ecr-exclusive-label.is-disabled {
+	opacity: 0.45;
+	cursor: not-allowed;
+}
+
+.cf7-ecr-booking.is-exclusive-blocked .cf7-ecr-exclusive {
+	cursor: not-allowed;
+}
+
+.reservation-form {
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+.reservation-form h3 {
+	text-align: center;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="number"] {
+	border: 2px solid #5bc5ec;
+	padding: 10px 15px;
+	font-size: 1.15em;
+	color: #042338;
+	width: 100%;
+}
+
+.reservation-form label {
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	align-items: flex-start;
+	font-weight: 600;
+}
+
+.reservation-form label span {
+	width: 100%;
+}
+
+.reservation-form * {
+	box-sizing: border-box;
+}
+
+.legal label {
+	flex-direction: row;
+	font-size: 14px;
+}
+
+.legal a {
+	color: #042338;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.legal .wpcf7-list-item {
+	margin: 0;
+}
+
+#cf7-ecr-people-2 {
+	margin-right: 10px;
+}
+
+.cf7-ecr-people {
+	max-width: 110px;
+}
+
+.reservation-form input[type="submit"] {
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+	background-color: #5bc5ec;
+	font-size: 1.125em;
+	border: 1px solid #5bc5ec;
+	cursor: pointer;
+}
+
+.reservation-form input[type="submit"]:disabled {
+	background-color: #f3f3f3;
+	color: #999;
+	border-color: #e1e1e1;
+	cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+
+	.cf7-ecr-date,
+	.cf7-ecr-calendar,
+	.cf7-ecr-booking {
+		max-width: 100%;
+	}
+
+	.cf7-ecr-day {
+		min-height: 44px;
+		padding: 4px 2px;
+	}
+
+	.cf7-ecr-day-meta {
+		font-size: 8px;
+	}
+}
+
+.wpcf7-not-valid-tip {
+	font-size: 14px;
+}
+
+.legal span {
+	width: calc(100% - 30px) !important;
+	font-weight: 400 !important;
+}
+
+.cf7-ecr-exclusive,
+.legal input[type="checkbox"] {
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+
+	display: inline-block !important;
+	vertical-align: middle !important;
+	width: 18px !important;
+	height: 18px !important;
+	border: 2px solid #5bc5ec !important;
+	border-radius: 0 !important;
+	background-color: transparent !important;
+	margin: 0 10px 0 0 !important;
+	padding: 0 !important;
+	cursor: pointer !important;
+	outline: none !important;
+	box-sizing: border-box !important;
+	position: relative !important;
+}
+
+.cf7-ecr-exclusive:checked,
+.legal input[type="checkbox"]:checked {
+	background-color: #5bc5ec !important;
+	border-color: #5bc5ec !important;
+}
+
+.cf7-ecr-people-label {
+	flex-direction: column !important;
+}
